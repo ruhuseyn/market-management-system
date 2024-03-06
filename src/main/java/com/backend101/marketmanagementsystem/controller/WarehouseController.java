@@ -2,7 +2,7 @@ package com.backend101.marketmanagementsystem.controller;
 
 import com.backend101.marketmanagementsystem.dto.request.WarehouseByFkEmployeeIdRequestDTO;
 import com.backend101.marketmanagementsystem.dto.response.WarehouseResponseDTO;
-import com.backend101.marketmanagementsystem.service.impl.WarehouseServiceImpl;
+import com.backend101.marketmanagementsystem.service.WarehouseService;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
@@ -17,7 +17,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class WarehouseController {
 
-    WarehouseServiceImpl warehouseServiceImpl;
+    WarehouseService warehouseServiceImpl;
 
     @GetMapping("/products")
     @ResponseStatus(HttpStatus.OK)
