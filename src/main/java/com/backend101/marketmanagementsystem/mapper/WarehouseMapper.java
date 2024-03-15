@@ -11,4 +11,6 @@ public interface WarehouseMapper {
     WarehouseResponseDTO toWarehouseResponseDto(WarehouseEntity entity);
 
     WarehouseReadDTO toWarehouseReadDTO(WarehouseEntity entity);
+
+    WarehouseEntity toEntity(WarehouseResponseDTO dto);
 }

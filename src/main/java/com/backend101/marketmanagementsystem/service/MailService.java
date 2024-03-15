@@ -14,12 +14,12 @@ public class MailService {
 
     JavaMailSender mailSender;
 
-    public String sendMail() {
+    public String sendMail(String destinationTo,String description) {
         SimpleMailMessage message=new SimpleMailMessage();
         message.setFrom("ruhuseyn26@gmail.com");
-        message.setTo("vazifa.guliyeva@gmail.com");
-        message.setText("Revan Exception+securityni yaz");
-        message.setSubject("Isdememis Gelme!!!!!!!!!!!!!!!");
+        message.setTo(destinationTo);
+        message.setText(description);
+        message.setSubject("Meshulunuz hazir");
         mailSender.send(message);
         return "Gönderildi";
     }

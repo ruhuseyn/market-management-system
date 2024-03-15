@@ -27,6 +27,8 @@ public class WarehouseEntity {
     String productNo;
     @Column(name = "product_name")
     String productName;
+    @Column(name = "fk_product_id")
+    String fkProductId;
     @Column(name = "is_active")
     String isActive;
     BigDecimal quantity;
