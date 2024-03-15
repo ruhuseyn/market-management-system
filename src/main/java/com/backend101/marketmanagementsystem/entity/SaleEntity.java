@@ -1,10 +1,8 @@
 package com.backend101.marketmanagementsystem.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import lombok.experimental.FieldDefaults;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.math.BigDecimal;
@@ -14,6 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Entity(name = "sale")
 @Builder
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class SaleEntity {
 
     @Id
