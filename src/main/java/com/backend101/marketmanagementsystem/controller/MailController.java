@@ -16,8 +16,8 @@ public class MailController {
 
     MailService mailService;
 
-    @GetMapping()
-    public void mail(){
-        mailService.sendMail();
-    }
+//    @GetMapping()
+//    public void mail(){
+//        mailService.sendMail();
+//    }
 }
